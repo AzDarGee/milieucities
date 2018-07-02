@@ -16,9 +16,8 @@
 /tmp
 
 .byebug_history
-/config/database.yml
 dump.rdb
-.env
+
 
 node_modules
 app/client/node_modules
