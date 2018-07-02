@@ -41,5 +41,8 @@ module MilieuServer
     end
 
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/services/**/*)
+
+    #  Heroku
+    config.assets.initialize_on_precompile = false
   end
 end
