@@ -5,7 +5,8 @@ class DevSitesController < ApplicationController
 
   def index
     @no_header = true
-    @dev_sites = DevSiteSearch.new(search_params).results
+    # @dev_sites = DevSiteSearch.new(search_params).results
+    @dev_sites= DevSite.all
     @total = @dev_sites.count
     paginate
 
