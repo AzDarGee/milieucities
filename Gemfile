@@ -26,7 +26,7 @@ gem 'cancancan', '~> 1.15.0'
 gem 'geokit-rails'
 gem 'bcrypt', '~> 3.1.11'
 gem 'fog', '~> 1.38'
-gem 'rmagick', '~> 2.15.4'
+gem 'rmagick'
 gem 'simple_command'
 gem 'jwt'
 gem 'closure_tree', '~> 6.5.0'
@@ -82,4 +82,4 @@ group :production, :staging do
   gem 'rails_12factor'
 end
 
-ruby '2.3.0'
+ruby '2.6.0'
