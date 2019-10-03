@@ -1,4 +1,4 @@
-class Contact < ActiveRecord::Base
+class Contact < ApplicationRecord
   WARD_COUNCILLOR = 'Ward Councillor'.freeze
   PLANNER = 'Planner'.freeze
   APPLICANT = 'Applicant'.freeze

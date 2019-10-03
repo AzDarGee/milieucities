@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'rack-cors'
 gem 'httparty'
 gem 'figaro'
-gem "webpacker"
+# gem "webpacker"
 
 # background services gems
 gem 'whenever'

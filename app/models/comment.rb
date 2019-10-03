@@ -4,7 +4,7 @@ require 'watson'
 include ActionView::Helpers::DateHelper
 include Services::Watson
 
-class Comment < ActiveRecord::Base
+class Comment < ApplicationRecord
   UNFLAGGED_STATUS = 'UNFLAGGED'.freeze
   FLAGGED_STATUS = 'FLAGGED'.freeze
   APPROVED_STATUS = 'APPROVED'.freeze

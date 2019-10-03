@@ -1,4 +1,4 @@
-class DevSiteSearch < ActiveRecord::Base
+class DevSiteSearch < ApplicationRecord
   self.primary_key = 'dev_site_id'
   SIMILARITY_THRESHOLD = 0.5
 

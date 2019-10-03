@@ -1,4 +1,4 @@
-class Conversation < ActiveRecord::Base
+class Conversation < ApplicationRecord
   belongs_to :user
 
   validates :address, presence: { message: 'Address is required' }

@@ -1,4 +1,4 @@
-class Profile < ActiveRecord::Base
+class Profile < ApplicationRecord
   belongs_to :user
   # THIS ARRAY MUST BE IN ORDER BY EACH WARDS, WARD NUMBER
 

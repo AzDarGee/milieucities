@@ -1,4 +1,4 @@
-class Address < ActiveRecord::Base
+class Address < ApplicationRecord
   include Geokit::Geocoders
   belongs_to :addressable, polymorphic: true
 

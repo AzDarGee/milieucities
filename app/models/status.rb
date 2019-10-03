@@ -1,4 +1,4 @@
-class Status < ActiveRecord::Base
+class Status < ApplicationRecord
   default_scope { order(start_date: :asc) }
   belongs_to :dev_site, foreign_key: 'dev_site_id'
   has_one :meeting, dependent: :destroy

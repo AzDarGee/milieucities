@@ -1,4 +1,4 @@
-class UpdateCommentSentimentJob
+class UpdateCommentSentimentJob < ApplicationJob
   @queue = :milieu_primary_queue
 
   def self.perform(comment_id)

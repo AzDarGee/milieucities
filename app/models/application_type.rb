@@ -1,4 +1,4 @@
-class ApplicationType < ActiveRecord::Base
+class ApplicationType < ApplicationRecord
   VALID_APPLICATION_TYPES = [
     'Site Plan Approval',
     'Condo Approval',

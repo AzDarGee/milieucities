@@ -1,4 +1,4 @@
-class PruneDeadLinksJob
+class PruneDeadLinksJob < ApplicationJob
   @queue = :milieu_primary_queue
 
   def self.perform(dev_site_id)

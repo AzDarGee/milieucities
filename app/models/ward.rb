@@ -1,4 +1,4 @@
-class Ward < ActiveRecord::Base
+class Ward < ApplicationRecord
   belongs_to :municipality
   validates :name,
             presence: { message: 'Name is required.' },

@@ -1,4 +1,4 @@
-class Notification < ActiveRecord::Base
+class Notification < ApplicationRecord
   mount_uploader :notice, FilesUploader
   belongs_to :notifiable, polymorphic: true
   after_create :send_notification

@@ -1,5 +1,5 @@
 class CustomSurveysController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
 
   def typeform
     typeform_id = params['form_response']['form_id']

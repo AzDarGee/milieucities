@@ -1,4 +1,4 @@
-class Meeting < ActiveRecord::Base
+class Meeting < ApplicationRecord
   PUBLIC_MEETING_TYPE = 'public'.freeze
   COUNCIL_MEETING_TYPE = 'council'.freeze
 

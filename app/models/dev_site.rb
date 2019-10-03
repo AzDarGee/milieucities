@@ -1,6 +1,6 @@
 require 'data_analysis'
 
-class DevSite < ActiveRecord::Base
+class DevSite < ApplicationRecord
   include Services::DataAnalysis
 
   scope :latest, -> { joins(:statuses).order('statuses.start_date DESC') }

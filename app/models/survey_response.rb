@@ -1,4 +1,4 @@
-class SurveyResponse < ActiveRecord::Base
+class SurveyResponse < ApplicationRecord
   belongs_to :custom_survey
   has_many :comments, as: :commentable, dependent: :destroy
   validates :token, uniqueness: true

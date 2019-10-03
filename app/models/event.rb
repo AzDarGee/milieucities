@@ -1,4 +1,4 @@
-class Event < ActiveRecord::Base
+class Event < ApplicationRecord
   include Geokit::Geocoders
   mount_uploaders :images, ImagesUploader
 

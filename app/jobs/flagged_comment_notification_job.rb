@@ -1,6 +1,6 @@
 require 'mandrill'
 
-class FlaggedCommentNotificationJob
+class FlaggedCommentNotificationJob < ApplicationJob
   @queue = :milieu_primary_queue
 
   class << self

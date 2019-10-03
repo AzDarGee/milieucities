@@ -1,6 +1,6 @@
 require 'mandrill'
 
-class NewDevelopmentNotificationJob
+class NewDevelopmentNotificationJob < ApplicationJob
   @queue = :milieu_primary_queue
 
   class << self

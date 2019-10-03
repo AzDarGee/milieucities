@@ -1,4 +1,4 @@
-class CityFile < ActiveRecord::Base
+class CityFile < ApplicationRecord
   belongs_to :dev_site
 
   def destroy_if_dead_link

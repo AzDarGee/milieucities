@@ -1,7 +1,7 @@
 require 'mandrill'
 require 'json'
 
-class SendNotificationJob
+class SendNotificationJob < ApplicationJob
   @queue = :milieu_primary_queue
 
   class << self

@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   extend FriendlyId
 
   rolify
@@ -17,16 +17,16 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :addresses, allow_destroy: true
   accepts_nested_attributes_for :profile
 
-  validates :email,
-            presence: { message: I18n.t('validates.alert.emailIsRequired') },
-            uniqueness: { message: I18n.t('validates.alert.emailAlreadyInUse') },
-            unless: 'provider.present?'
-  validates :password,
-            presence: { message: I18n.t('validates.alert.passwordIsRequired'), on: :create },
-            confirmation: { message: I18n.t('validates.alert.passwordNotMatch') },
-            length: { in: 6..20, message: I18n.t('validates.alert.passwordLimitation') },
-            allow_blank: true,
-            unless: 'provider.present?'
+  # validates :email,
+  #           presence: { message: I18n.t('validates.alert.emailIsRequired') },
+  #           uniqueness: { message: I18n.t('validates.alert.emailAlreadyInUse') },
+  #           unless: 'provider.present?'
+  # validates :password,
+  #           presence: { message: I18n.t('validates.alert.passwordIsRequired'), on: :create },
+  #           confirmation: { message: I18n.t('validates.alert.passwordNotMatch') },
+  #           length: { in: 6..20, message: I18n.t('validates.alert.passwordLimitation') },
+  #           allow_blank: true,
+  #           unless: 'provider.present?'
 
   # check docs for validating the address association
   # https://apidock.com/rails/ActiveRecord/Validations/ClassMethods/validates_associated
