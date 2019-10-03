@@ -1,46 +1,46 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '5.2.3'
 
 # rails core gems
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'jquery-rails', '~> 4.1.0'
-gem 'jquery-turbolinks', '~> 2.1.0'
-gem 'turbolinks', '~> 5.0.0'
-gem 'rack-cors', '~> 0.4.0'
-gem 'rails-api', require: 'rails-api/action_controller/api'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
+gem 'turbolinks'
+gem 'rack-cors'
 gem 'httparty'
 gem 'figaro'
+gem "webpacker"
 
 # background services gems
 gem 'whenever'
-gem 'resque', '~> 1.26.0', require: 'resque/server'
-gem 'mandrill-api', '~> 1.0.53'
+gem 'resque', require: 'resque/server'
+gem 'mandrill-api'
 
 # model gems
-gem 'carrierwave', '~> 1.0.0'
-gem 'rolify', '~> 5.1.0'
-gem 'friendly_id', '~> 5.1.0'
-gem 'cancancan', '~> 1.15.0'
+gem 'carrierwave'
+gem 'rolify'
+gem 'friendly_id'
+gem 'cancancan'
 gem 'geokit-rails'
-gem 'bcrypt', '~> 3.1.11'
-gem 'fog', '~> 1.38'
+gem 'bcrypt'
+gem 'fog'
 gem 'rmagick'
 gem 'simple_command'
 gem 'jwt'
-gem 'closure_tree', '~> 6.5.0'
-gem 'textacular', '~> 4.0'
+gem 'closure_tree'
+gem 'textacular'
 
 # view gems
-gem 'font-awesome-rails', '~> 4.7.0.0'
-gem 'momentjs-rails', '~> 2.11.0'
-gem 'rabl', '~> 0.12.0'
+gem 'font-awesome-rails'
+gem 'momentjs-rails'
+gem 'rabl'
 gem 'cocoon'
 
 # database gems
-gem 'pg', '~> 0.18.4'
-gem 'redis', '~> 3.2.2'
+gem 'pg'
+gem 'redis'
 
 # omniauth gems
 gem 'therubyracer'
@@ -50,34 +50,34 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 
 group :development do
-  gem 'capistrano', '3.7.1', require: false
-  gem 'capistrano-npm', '~> 1.0.2', require: false
-  gem 'capistrano-rails', '~> 1.2.2', require: false
-  gem 'capistrano-rvm', '~> 0.1.2', require: false
-  gem 'capistrano-bundler', '~> 1.2.0', require: false
-  gem 'capistrano-resque', '~> 0.2.2', require: false
+  gem 'capistrano', require: false
+  gem 'capistrano-npm', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-resque', require: false
   gem 'pry-rails'
   gem 'spring'
   gem 'letter_opener'
-  gem 'dotenv-rails', '~> 2.1.1'
+  gem 'dotenv-rails'
   gem 'puma'
   gem 'better_errors'
   gem 'foreman'
-  gem 'rubocop', '~> 0.46.0', require: false
+  gem 'rubocop', require: false
 end
 
 group :test do
-  gem 'dotenv-rails', '~> 2.1.1'
+  gem 'dotenv-rails'
   gem 'ffaker'
-  gem 'rspec-rails', '~> 3.3'
-  gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'shoulda-matchers'
-  gem 'minitest-reporters', '~> 1.1.8'
-  gem 'mini_backtrace', '0.1.3'
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
 end
 
 group :production, :staging do
-  gem 'unicorn', '5.1.0'
+  gem 'unicorn'
   gem 'puma'
   gem 'rails_12factor'
 end
